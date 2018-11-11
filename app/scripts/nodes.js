@@ -17,6 +17,7 @@ nodes.nodeTypes = {
 	ETSC: "ETSC",
 	EGEM: "EGEM",
 	CLO: "CLO",
+	CLOT: "CLOT",
 	MUSIC: "MUSIC",
 	GO: "GO",
 	EOSC: "EOSC",
@@ -328,6 +329,18 @@ nodes.nodeList = {
 		abiList: require("./abiDefinitions/cloAbi.json"),
 		service: "0xinfra.com",
 		lib: new nodes.customNode("https://clo-geth.0xinfra.com/", "")
+	},
+	clo_testnet3: {
+		name: "CLO Testnet 3.0",
+		blockExplorerTX: "https://explorer-testnet.callisto.network/tx/[[txHash]]",
+		blockExplorerAddr: "https://explorer-testnet.callisto.network/addr/[[address]]",
+		type: nodes.nodeTypes.CLOT,
+		eip155: true,
+		chainId: 20729,
+		tokenList: require("./tokens/cloTokens.json"),
+		abiList: require("./abiDefinitions/cloAbi.json"),
+		service: "clo-testnet3.0xinfra.com",
+		lib: new nodes.customNode("https://clo-testnet3.0xinfra.com/", "")
 	},
 	music: {
 		name: "MUSIC",

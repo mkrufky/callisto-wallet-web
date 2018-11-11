@@ -29,6 +29,7 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
     hwPirlPath: "m/44'/164'/0'/0", // first address: m/44'/164'/0'/0/0
     hwEtherGemPath: "m/44'/1987'/0'/0", // first address: m/44'/1987'/0'/0/0
     hwCallistoPath: "m/44'/820'/0'/0", // first address: m/44'/820'/0'/0/0
+    hwCallistoTestPath: "m/44'/20729'/0'/0", // first address: m/44'/20729'/0'/0/0
     hwSocialPath: "m/44'/1128'/0'/0", // first address: m/44'/1128'/0'/0/0
     hwMusicoinPath: "m/44'/184'/0'/0", // first address: m/44'/184'/0'/0/0
     singularDTVPath: "m/0'/0'/0'", // first address: m/0'/0'/0'/0
@@ -64,6 +65,9 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
           break;
         case nodes.nodeTypes.CLO:
           $scope.HDWallet.dPath = $scope.HDWallet.hwCallistoPath;
+          break;
+        case nodes.nodeTypes.CLOT:
+          $scope.HDWallet.dPath = $scope.HDWallet.hwCallistoTestPath;
           break;
         case nodes.nodeTypes.EXP:
           $scope.HDWallet.dPath = $scope.HDWallet.hwExpansePath;
@@ -142,6 +146,9 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
         case nodes.nodeTypes.CLO:
           $scope.HDWallet.dPath = $scope.HDWallet.hwCallistoPath;
           break;
+        case nodes.nodeTypes.CLOT:
+          $scope.HDWallet.dPath = $scope.HDWallet.hwCallistoTestPath;
+          break;
         case nodes.nodeTypes.ETSC:
           $scope.HDWallet.dPath = $scope.HDWallet.hwSocialPath;
           break;
@@ -203,6 +210,9 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
           break;
         case nodes.nodeTypes.CLO:
           $scope.HDWallet.dPath = $scope.HDWallet.hwCallistoPath;
+          break;
+        case nodes.nodeTypes.CLOT:
+          $scope.HDWallet.dPath = $scope.HDWallet.hwCallistoTestPath;
           break;
         case nodes.nodeTypes.ETSC:
           $scope.HDWallet.dPath = $scope.HDWallet.hwSocialPath;
