@@ -6,7 +6,7 @@ var tabsCtrl = function($scope, globalService, $translate, $sce) {
   $scope.customNodeModal = document.getElementById('customNodeModal') ? new Modal(document.getElementById('customNodeModal')) : null;
   $scope.Validator = Validator;
   $scope.nodeList = nodes.nodeList;
-  $scope.defaultNodeKey = 'eth_mew';
+  $scope.defaultNodeKey = 'clo';
   $scope.customNode = {
     options: 'eth',
     name: '',
